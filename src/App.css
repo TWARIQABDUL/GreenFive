@@ -1,0 +1,247 @@
+:root {
+  --color-primary: #99FF99;
+  --btn-color: #006600;
+  --chart-bg: #E6FFE6;
+  --bar: #00FF00;
+}
+.update{
+  display: block;
+
+}
+.container{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+  }
+
+  body {
+    padding: 10px;
+  }
+  .update{
+    display: none;
+  }
+  .container {
+    display: block;
+    padding: 0 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--chart-bg);
+  }
+
+  .image-logo {
+    width: 85px;
+    height: 46px;
+  }
+
+  .image-logo img {
+    width: 85px;
+    height: 46px;
+  }
+
+  .menu-btn img {
+    width: 45px;
+    /* height: 46px; */
+  }
+
+  .quick-menu-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+  }
+
+  .quick-menu {
+    width: 180px;
+    height: 168px;
+  }
+
+  .quick-menu img {
+    width: 100%;
+    height: 168px;
+    border-radius: 15px;
+
+  }
+
+  .perfomance-table {
+    border-radius: 15px;
+    padding: 5px 0;
+    margin-top: 30px;
+    height: 200px;
+    width: 100%;
+    background-color: var(--chart-bg);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .perfomance-fields {
+    height: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: end;
+    /* bottom: 0; */
+    /* justify-content: baseline; */
+  }
+
+  /* .progres{
+  height: 50%;
+  background-color: #00FF00;
+} */
+  .chart {
+    margin-top: 30px;
+  }
+
+  .chart h1 {
+    font-family: sans-serif;
+  }
+
+  .chart img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .login-container {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 80%;
+    border-radius: 15px;
+  }
+
+  .form {
+    margin-top: 30px;
+  }
+
+  .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  form input {
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: var(--chart-bg);
+    color: black;
+    font-size: 13px;
+    border: 0;
+  }
+
+  form button {
+    height: 40px;
+    background-color: var(--btn-color);
+    border: 0;
+    border-radius: 10px;
+  }
+
+  form .btn-login {
+    padding: 15px 0;
+    /* height: 40px; */
+    background-color: var(--btn-color);
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  .form a {
+    text-decoration: none;
+    /* color: black; */
+    margin-top: 20px;
+  }
+
+  .big-button {
+    width: 100%;
+    height: 40vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-main {
+    width: 80%;
+    background-color: var(--btn-color);
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .white-ofsset {
+    width: 85%;
+    height: 85%;
+    background-color: var(--chart-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .white-ofsset button {
+    font-size: 70px;
+    color: var(--bar);
+    background: transparent;
+    border: 0;
+  }
+
+  .slide-control {
+    width: 100%;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    background: white;
+    /* Default background */
+    opacity: 0.7;
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 48px;
+    background: var(--bar);
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 48px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+}
